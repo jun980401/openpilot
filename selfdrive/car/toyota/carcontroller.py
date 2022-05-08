@@ -66,7 +66,7 @@ class CarController:
     if abs(CS.out.steeringRateDeg) >= STEER_FAULT_MAX_RATE:
       if CS.out.steeringAngleDeg * CS.out.steeringRateDeg < 0:
         # wheel moving toward center
-        in_fault_zone = abs(CS.out.steeringRateDeg) < 425  # above 425, less than 908
+        in_fault_zone = abs(CS.out.steeringRateDeg) < 500  # above 425, less than 908
       else:
         # moving away from center
         in_fault_zone = abs(CS.out.steeringRateDeg) <= 175  # above 150, less than 175
