@@ -44,6 +44,18 @@ inline uchar3 color_correct(half3 rgb) {
   return convert_uchar3_sat(ret * 255.0);
 }
 
+inline half get_vignetting_s(float r) {
+  if (r < 62500) {
+    return (half)(1.0f + 0.0000008f*r);
+  } else if (r < 490000) {
+    return (half)(0.9625f + 0.0000014f*r);
+  } else if (r < 1102500) {
+    return (half)(1.26434f + 0.0000000000016f*r*r);
+  } else {
+    return (half)(0.53503625f + 0.0000000000022f*r*r);
+  }
+}
+
 inline half val_from_12(const uchar * source, int gx, int gy, half black_level) {
   // parse 12bit
   int start = gy * FRAME_STRIDE + (3 * (gx / 2)) + (FRAME_STRIDE * FRAME_OFFSET);
@@ -61,17 +73,7 @@ inline half val_from_12(const uchar * source, int gx, int gy, half black_level) 
     gx = (gx - RGB_WIDTH/2);
     gy = (gy - RGB_HEIGHT/2);
     float r = gx*gx + gy*gy;
-    half s;
-    if (r < 62500) {
-      s = (half)(1.0f + 0.0000008f*r);
-    } else if (r < 490000) {
-      s = (half)(0.9625f + 0.0000014f*r);
-    } else if (r < 1102500) {
-      s = (half)(1.26434f + 0.0000000000016f*r*r);
-    } else {
-      s = (half)(0.53503625f + 0.0000000000022f*r*r);
-    }
-    pv = s * pv;
+    pv *= get_vignetting_s(r);
   }
 
   pv = clamp(pv, (half)0.0, (half)1.0);
@@ -94,16 +96,15 @@ inline half2 vals_from_12(const uchar * source, int gx, int gy, half black_level
 
   // correct vignetting
   if (CAM_NUM == 1) { // fcamera
-    const float r = ((gx)-(RGB_WIDTH/2))*((gx+1)-(RGB_WIDTH/2)) + (gy-(RGB_HEIGHT/2))*(gy-(RGB_HEIGHT/2));
-    if (r < 62500) {
-      pvs *= 1.0f + 0.0000008f * r;
-    } else if (r < 490000) {
-      pvs *= 0.9625f + 0.0000014f*r;
-    } else if (r < 1102500) {
-      pvs *= 1.26434f + 0.0000000000016f*r*r;
-    } else {
-      pvs *= 0.53503625f + 0.0000000000022f*r*r;
-    }
+    gy = (gy - RGB_HEIGHT/2);
+
+    const int gx0 = (gx - RGB_WIDTH/2);
+    float r0 = gx0*gx0 + gy*gy;
+    pvs.s0 *= get_vignetting_s(r0);
+
+    const int gx1 = (gx + 1 - RGB_WIDTH/2);
+    float r1 = gx1*gx1 + gy*gy;
+    pvs.s1 *= get_vignetting_s(r1);
   }
 
   pvs = clamp(pvs, 0.0, 1.0);
