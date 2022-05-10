@@ -50,7 +50,6 @@ class CarController:
   def update(self, CC, CS):
     actuators = CC.actuators
     hud_control = CC.hudControl
-    pcm_cancel_cmd = CC.cruiseControl.cancel
 
     # Steering Torque
     new_steer = int(round(actuators.steer * self.params.STEER_MAX))
@@ -80,6 +79,13 @@ class CarController:
       }
       ret.append(self.packer.make_can_msg("LKAS", 4, values, self.frame % 255))
 
+      # cruise cancel
+      if CC.cruiseControl.cancel and self.frame % 5 == 0:
+        values = {
+          "PAUSE_RESUME_BTN": 1,
+        }
+        ret.append(self.packer.make_can_msg("CRUISE_BUTTONS", 5, values, self.frame % 255))
+
       new_actuators = actuators.copy()
       new_actuators.steer = apply_steer / self.params.STEER_MAX
 
@@ -98,7 +104,7 @@ class CarController:
                                    left_lane_warning, right_lane_warning))
 
     if not self.CP.openpilotLongitudinalControl:
-      if pcm_cancel_cmd:
+      if CC.cruiseControl.cancel:
         can_sends.append(create_clu11(self.packer, self.frame, CS.clu11, Buttons.CANCEL))
       elif CS.out.cruiseState.standstill:
         # send resume at a max freq of 10Hz
