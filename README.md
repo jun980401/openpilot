@@ -41,7 +41,7 @@ openpilot 이란?
 
 차량에서 openpilot을 사용하기 위해 다음 4가지가 필요합니다.
 * 먼저 openpilot 소프트웨어가 필요합니다. 여기서 무료로 사용할 수 있습니다.
-* 다음으로 [150개 이상의 지원되는 차량](docs/CARS.md) 중 하나가 필요합니다. 현재 혼다, 토요타, 현대, 닛산, 기아, 크라이슬러, 렉서스, Acura, 아우디, 폭스바겐 등을 지원하고 있습니다. 보유한 차량이 공식적으로 지원되지 않아도 적응형 크루즈 컨트롤 및 차선 유지 보조 장치가 있는 경우 개방형 조종 장치를 실행할 수 있습니다.
+* 다음으로 [지원 중인 150개 이상의 차량](docs/CARS.md) 중 하나가 필요합니다. 현재 혼다, 토요타, 현대, 닛산, 기아, 크라이슬러, 렉서스, Acura, 아우디, 폭스바겐 등을 지원하고 있습니다. 보유한 차량이 공식적으로 지원되지 않아도 적응형 크루즈 컨트롤 및 차선 유지 보조 장치가 있는 경우 개방형 조종 장치를 실행할 수 있습니다.
 * 이 소프트웨어를 실행하기 위해 지원되는 장치로 [comma three](https://comma.ai/shop/products/three)가 필요하고, 실험을 하고 싶다면 [웹 카메라가 있는 Ubuntu 컴퓨터](https://github.com/commaai/openpilot/tree/master/tools/webcam)가 필요합니다.
 * 자동차에 연결하는 방법. comma three를 이용하면, 오직 [car harness](https://comma.ai/shop/products/car-harness)만 있으면 됩니다. PC를 이용하면, [black panda](https://comma.ai/shop/products/panda)도 함께 필요합니다.
 
@@ -60,15 +60,15 @@ openpilot의 도구를 사용하면 로그를 플로팅하고 드라이브를 �
 커뮤니티 및 기여
 ------
 
-openpilot is developed by [comma](https://comma.ai/) and by users like you. We welcome both pull requests and issues on [GitHub](http://github.com/commaai/openpilot). Bug fixes and new car ports are encouraged. Check out [the contributing docs](docs/CONTRIBUTING.md).
+openpilot은 [comma](https://comma.ai/)와 여러분과 같은 사용자가 함께 개발하는 소프트웨어입니다. [GitHub](http://github.com/commaai/openpilot)에서 pull requests 와 issues 모두 열려있으니 많은 참여 바랍니다. 버그 수정 및 새로운 차량 등록을 추진하고 있습니다. [기여 문서](docs/CONTRIBUTING.md)를 확인해보세요.
 
-Documentation related to openpilot development can be found on [docs.comma.ai](https://docs.comma.ai). Information about running openpilot (e.g. FAQ, fingerprinting, troubleshooting, custom forks, community hardware) should go on the [wiki](https://github.com/commaai/openpilot/wiki).
+Openpilot 개발과 관련된 문서는 [docs.comma.ai](https://docs.comma.ai)에서 찾을 수 있습니다. Openpilot 실행에 대한 정보(예: FAQ, 지문, 문제 해결, 사용자 정의 포크, 커뮤니티 하드웨어)는 [위키](https://github.com/commaai/openpilot/wiki)에 있어야 합니다.
 
-You can add support for your car by following guides we have written for [Brand](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) and [Model](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) ports. Generally, a car with adaptive cruise control and lane keep assist is a good candidate. [Join our Discord](https://discord.comma.ai) to discuss car ports: most car makes have a dedicated channel.
+[브랜드](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) 및 [모델](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) 등록에 대해 작성한 가이드에 따라 지원 차량을 추가할 수 있습니다. 일반적으로 적응형 순항 제어 및 차선 유지 보조 기능이 있는 차량이 동록하기 적합한 후보입니다. [저희 디스코드](https://discord.comma.ai)에 참여하여 차량 등록에 대해 논의해보세요. 대부분의 차량 제조사에 맞는 채널이 있습니다.
 
-Want to get paid to work on openpilot? [comma is hiring](https://comma.ai/jobs/).
+openpilot에 입사하고 싶으신가요? [comma는 언제나 열려있습니다](https://comma.ai/jobs/).
 
-And [follow us on Twitter](https://twitter.com/comma_ai).
+그리고 [트위터를 팔로우해주세요](https://twitter.com/comma_ai).
 
 사용자 데이터 및 comma 계정
 ------
