@@ -60,7 +60,7 @@ openpilot의 도구를 사용하면 로그를 플로팅하고 드라이브를 �
 커뮤니티 및 기여
 ------
 
-openpilot is developed by [comma](https://comma.ai/) and by users like you. We welcome both pull requests and issues on [GitHub](http://github.com/commaai/openpilot). Bug fixes and new car ports are encouraged. Check out [the contributing docs](docs/CONTRIBUTING.md).
+openpilot은 [comma](https://comma.ai/)과 여러분과 같은 사용자가 개발하는 소프트웨어입니다. [GitHub](http://github.com/commaai/openpilot)에서 pull requests와 issues는 항상 열려있으니 많은 참여 바랍니다. 현재 버그 수정과 차량 등록을 추진하고 있습니다. [기여 문서](docs/CONTRIBUTING.md)를 확인해보세요.
 
 Documentation related to openpilot development can be found on [docs.comma.ai](https://docs.comma.ai). Information about running openpilot (e.g. FAQ, fingerprinting, troubleshooting, custom forks, community hardware) should go on the [wiki](https://github.com/commaai/openpilot/wiki).
 
