@@ -4,7 +4,7 @@
 =======================
 
 * [openpilot 이란?](#openpilot-이란)
-* [차량 내 작동법](#차량-내-작동법)
+* [차량 작동법](#차량-작동법)
 * [PC 작동법](#pc-작동법)
 * [커뮤니티 및 기여](#커뮤니티-및-기여)
 * [사용자 데이터 및 comma 계정](#사용자-데이터-및-comma-계정)
@@ -17,7 +17,7 @@
 openpilot 이란?
 ------
 
-[openpilot](http://github.com/commaai/openpilot) is an open source driver assistance system. Currently, openpilot performs the functions of Adaptive Cruise Control (ACC), Automated Lane Centering (ALC), Forward Collision Warning (FCW) and Lane Departure Warning (LDW) for a growing variety of [supported car makes, models and model years](docs/CARS.md). In addition, while openpilot is engaged, a camera based Driver Monitoring (DM) feature alerts distracted and asleep drivers. See more about [the vehicle integration](docs/INTEGRATION.md) and [limitations](docs/LIMITATIONS.md).
+[openpilot](http://github.com/commaai/openpilot) 은 오픈 소스 운전자 지원 시스템입니다. 현재 openpilot은 [지원되는 다양한 제조업체, 모델 및 연식](docs/CARS.md)에 적응형 순항 제어(ACC), 자동 차선 센터링(ALC), 전방 충돌 경고(FCW) 및 차선 이탈 경고(LDW)의 기능을 제공합니다. 또한 openpilot이 작동하는 동안 카메라 기반 DM(운전자 모니터링) 기능은 집중력이 떨어지거나 졸음 운전을 하는 운전자에게 경고기능을 수행합니다. [차량 통합](docs/INTEGRATION.md) 및 [제한 사항](docs/LIMITATIONS.md)에 대해 자세히 알아보세요.
 
 <table>
   <tr>
@@ -35,25 +35,26 @@ openpilot 이란?
 </table>
 
 
-차량 내 작동법
+차량 작동법
 ------
 
-To use openpilot in a car, you need four things
-* This software. It's free and available right here.
-* One of [the 150+ supported cars](docs/CARS.md). We support Honda, Toyota, Hyundai, Nissan, Kia, Chrysler, Lexus, Acura, Audi, VW, and more. If your car is not supported, but has adaptive cruise control and lane keeping assist, it's likely able to run openpilot.
-* A supported device to run this software: a [comma three](https://comma.ai/shop/products/three), or if you like to experiment, a [Ubuntu computer with webcams](https://github.com/commaai/openpilot/tree/master/tools/webcam).
-* A way to connect to your car. With a comma three, you need only a [car harness](https://comma.ai/shop/products/car-harness). With a PC, you also need a [black panda](https://comma.ai/shop/products/panda).
 
-We have detailed instructions for [how to install the device in a car](https://comma.ai/setup).
+차량에서 openpilot을 사용하기 위해 다음 4가지가 필요합니다.
+* 먼저 openpilot 소프트웨어가 필요합니다. 여기서 무료로 사용할 수 있습니다.
+* 다음으로 [150개 이상의 지원되는 차량](docs/CARS.md) 중 하나가 필요합니다. 현재 혼다, 토요타, 현대, 닛산, 기아, 크라이슬러, 렉서스, Acura, 아우디, 폭스바겐 등을 지원하고 있습니다. 보유한 차량이 공식적으로 지원되지 않아도 적응형 크루즈 컨트롤 및 차선 유지 보조 장치가 있는 경우 개방형 조종 장치를 실행할 수 있습니다.
+* 이 소프트웨어를 실행하기 위해 지원되는 장치로 [comma three](https://comma.ai/shop/products/three)가 필요하고, 실험을 하고 싶다면 [웹 카메라가 있는 Ubuntu 컴퓨터](https://github.com/commaai/openpilot/tree/master/tools/webcam)가 필요합니다.
+* 자동차에 연결하는 방법. comma three를 이용하면, 오직 [car harness](https://comma.ai/shop/products/car-harness)만 있으면 됩니다. PC를 이용하면, [black panda](https://comma.ai/shop/products/panda)도 함께 필요합니다.
+
+[자동차에 장치를 설치하는 방법](https://comma.ai/setup)에 대한 자세한 지침이 있습니다.
 
 PC 작동법
 ------
 
-All of openpilot's services can run as normal on a PC, even without special hardware or a car. To develop or experiment with openpilot you can run openpilot on recorded or simulated data.
+openpilot의 모든 서비스는 특별한 하드웨어나 자동차가 없어도 PC에서 정상적으로 실행할 수 있습니다. openpilot을 개발하거나 실험하기 위해 기록되거나 시뮬레이션된 데이터에 대해 openpilot을 실행할 수 있습니다.
 
-With openpilot's tools you can plot logs, replay drives and watch the full-res camera streams. See [the tools README](tools/README.md) for more information.
+openpilot의 도구를 사용하면 로그를 플로팅하고 드라이브를 재생하고 전체 해상도 카메라 스트림을 볼 수 있습니다. 더 많은 정보는 [tools README](tools/README.md)에서 확인해보세요.
 
-You can also run openpilot in simulation [with the CARLA simulator](tools/sim/README.md). This allows openpilot to drive around a virtual car on your Ubuntu machine. The whole setup should only take a few minutes, but does require a decent GPU.
+[CARLA simulator](tools/sim/README.md)를 활용하여 시뮬레이션에서 openpilot을 실행할 수도 있습니다. 이를 통해 openpilot은 Ubuntu 시스템에서 가상 자동차를 운전할 수 있습니다. 전체 설정은 몇 분 밖에 걸리지 않지만 권장 사양의 GPU가 필요합니다.
 
 
 커뮤니티 및 기여
