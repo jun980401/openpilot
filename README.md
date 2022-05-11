@@ -62,25 +62,25 @@ openpilot의 도구를 사용하면 로그를 플로팅하고 드라이브를 �
 
 openpilot은 [comma](https://comma.ai/)과 여러분과 같은 사용자가 개발하는 소프트웨어입니다. [GitHub](http://github.com/commaai/openpilot)에서 pull requests와 issues는 항상 열려있으니 많은 참여 바랍니다. 현재 버그 수정과 차량 등록을 추진하고 있습니다. [기여 문서](docs/CONTRIBUTING.md)를 확인해보세요.
 
-Documentation related to openpilot development can be found on [docs.comma.ai](https://docs.comma.ai). Information about running openpilot (e.g. FAQ, fingerprinting, troubleshooting, custom forks, community hardware) should go on the [wiki](https://github.com/commaai/openpilot/wiki).
+Openpilot 개발과 관련된 문서는 [docs.comma.ai](https://docs.comma.ai)에서 찾을 수 있습니다. Openpilot 실행에 대한 정보(예: FAQ, 지문, 문제 해결, 사용자 정의 포크, 커뮤니티 하드웨어)는 [위키](https://github.com/commaai/openpilot/wiki)에 있어야 합니다.
 
-You can add support for your car by following guides we have written for [Brand](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) and [Model](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) ports. Generally, a car with adaptive cruise control and lane keep assist is a good candidate. [Join our Discord](https://discord.comma.ai) to discuss car ports: most car makes have a dedicated channel.
+[브랜드](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) 및 [모델](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) 등록에 대해 작성한 가이드에 따라 지원 차량을 추가할 수 있습니다. 일반적으로 적응형 순항 제어 및 차선 유지 보조 기능이 있는 차량이 등록에 적합한 후보입니다. [디스코드](https://discord.comma.ai)에 참여하여 자동차 등록에 대해 토론해보세요. 각 차량 제조업체에 맞는 전용 채널이 있습니다.
 
-Want to get paid to work on openpilot? [comma is hiring](https://comma.ai/jobs/).
+openpilot에 입사하고 싶으신가요? [여기서 지원해보세요.](https://comma.ai/jobs/).
 
-And [follow us on Twitter](https://twitter.com/comma_ai).
+그리고 [트위터를 팔로우해주세요](https://twitter.com/comma_ai).
 
 사용자 데이터 및 comma 계정
 ------
 
-By default, openpilot uploads the driving data to our servers. You can also access your data through [comma connect](https://connect.comma.ai/). We use your data to train better models and improve openpilot for everyone.
+기본적으로 openpilot은 운전 데이터를 당사 서버에 업로드합니다. [comma connect](https://connect.comma.ai/)를 통해 데이터에 액세스할 수도 있습니다. 당사는 사용자 데이터를 사용하여 더 나은 모델을 훈련하고 모든 운전자를 위해 openpilot을 개선합니다.
 
-openpilot is open source software: the user is free to disable data collection if they wish to do so.
+openpilot은 오픈 소스 소프트웨어입니다. 단, 사용자의 의사에 따라 데이터 수집을 비활성화할 수 있습니다.
 
-openpilot logs the road facing cameras, CAN, GPS, IMU, magnetometer, thermal sensors, crashes, and operating system logs.
-The driver facing camera is only logged if you explicitly opt-in in settings. The microphone is not recorded.
+openpilot은 도로 직면 카메라, CAN, GPS, IMU, 자력계, 열 센서, 충돌 및 운영 체제 로그를 기록합니다.
+운전자 직면 카메라는 설정에 명시적으로 opt-in한 경우에만 기록됩니다. 마이크는 녹음되지 않습니다.
 
-By using openpilot, you agree to [our Privacy Policy](https://comma.ai/privacy). You understand that use of this software or its related services will generate certain types of user data, which may be logged and stored at the sole discretion of comma. By accepting this agreement, you grant an irrevocable, perpetual, worldwide right to comma for the use of this data.
+openpilot을 사용하면 [당사의 개인정보 보호정책](https://comma.ai/privacy)에 동의하는 것입니다. 여러분이 이 소프트웨어 및 관련 서비스를 사용하면 comma의 단독 재량에 따라 기록 및 저장될 수 있는 사용자 데이터가 생성된다는 것에 동의하는 것입니다. 이 내용에 동의함으로써 여러분은 이 데이터 사용에 대해 철회를 할 수 없으며 어디서든 comma를 사용할 수 있는 권한을 영구적으로 갖게 됩니다.
 
 안전성 및 테스트
 ----
