@@ -64,7 +64,7 @@ openpilot은 [comma](https://comma.ai/)과 여러분과 같은 사용자가 개�
 
 Openpilot 개발과 관련된 문서는 [docs.comma.ai](https://docs.comma.ai)에서 찾을 수 있습니다. Openpilot 실행에 대한 정보(예: FAQ, 지문, 문제 해결, 사용자 정의 포크, 커뮤니티 하드웨어)는 [위키](https://github.com/commaai/openpilot/wiki)에 있어야 합니다.
 
-[브랜드](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) 및 [모델](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) 등록에 대해 작성한 가이드에 따라 지원 차량을 추가할 수 있습니다. 일반적으로 적응형 순항 제어 및 차선 유지 보조 기능이 있는 차량이 등록에 적합한 후보입니다. [디스코드](https://discord.comma.ai)에 참여하여 자동차 등록에 대해 토론해보세요. 각 차량 제조업체에 맞는 전용 채널이 있습니다.
+[브랜드](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) 및 [모델](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) 등록에 대해 작성한 가이드에 따라 지원 차량을 추가할 수 있습니다. 일반적으로 적응형 순항 제어 및 차선 유지 보조 기능이 있는 차량이 등록에 적합한 후보입니다. [디스코드](https://discord.comma.ai)에 참여하여 차량 등록에 대해 토론해보세요. 각 차량 제조업체에 맞는 전용 채널이 있습니다.
 
 openpilot에 입사하고 싶으신가요? [여기서 지원해보세요](https://comma.ai/jobs/).
 
@@ -85,41 +85,41 @@ openpilot을 사용하면 [당사의 개인정보 보호정책](https://comma.ai
 안전성 및 테스트
 ----
 
-* openpilot observes ISO26262 guidelines, see [SAFETY.md](docs/SAFETY.md) for more details.
-* openpilot has software in the loop [tests](.github/workflows/selfdrive_tests.yaml) that run on every commit.
-* The code enforcing the safety model lives in panda and is written in C, see [code rigor](https://github.com/commaai/panda#code-rigor) for more details.
-* panda has software in the loop [safety tests](https://github.com/commaai/panda/tree/master/tests/safety).
-* Internally, we have a hardware in the loop Jenkins test suite that builds and unit tests the various processes.
-* panda has additional hardware in the loop [tests](https://github.com/commaai/panda/blob/master/Jenkinsfile).
-* We run the latest openpilot in a testing closet containing 10 comma devices continuously replaying routes.
+* openpilot은 ISO26262 지침을 따릅니다. 자세한 내용은 [SAFETY.md](docs/SAFETY.md)를 참조하십시오.
+* openpilot에는 모든 커밋에서 실행되는 루프 [테스트](.github/workflows/selfdrive_tests.yaml)에 소프트웨어가 있습니다.
+* 안전 모델을 적용하는 코드는 panda에 있으며 C로 작성되었습니다. 자세한 내용은 [code rigor](https://github.com/commaai/panda#code-rigor)를 참조하십시오.
+* 소프트웨어는 panda에 있는 [안전 테스트](https://github.com/commaai/panda/tree/master/tests/safety) 루프에 있습니다.
+* 내부적으로 다양한 프로세스를 빌드하고 단위 테스트하는 루프 Jenkins 테스트 제품군에 하드웨어가 있습니다.
+* 추가 하드웨어는 panda에 있는 [테스트](https://github.com/commaai/panda/blob/master/Jenkinsfile) 루프에 있습니다.
+* 당사는 지속적으로 경로를 replay하는 10개의 comma 장치가 포함된 테스트 공간에서 최신 openpilot을 실행합니다.
 
 디렉토리 구조
 ------
     .
-    ├── cereal              # The messaging spec and libs used for all logs
-    ├── common              # Library like functionality we've developed here
-    ├── docs                # Documentation
-    ├── opendbc             # Files showing how to interpret data from cars
-    ├── panda               # Code used to communicate on CAN
-    ├── third_party         # External libraries
-    ├── pyextra             # Extra python packages
-    └── selfdrive           # Code needed to drive the car
-        ├── assets          # Fonts, images, and sounds for UI
-        ├── athena          # Allows communication with the app
-        ├── boardd          # Daemon to talk to the board
-        ├── camerad         # Driver to capture images from the camera sensors
-        ├── car             # Car specific code to read states and control actuators
-        ├── common          # Shared C/C++ code for the daemons
-        ├── controls        # Planning and controls
-        ├── debug           # Tools to help you debug and do car ports
-        ├── locationd       # Precise localization and vehicle parameter estimation
-        ├── logcatd         # Android logcat as a service
-        ├── loggerd         # Logger and uploader of car data
+    ├── cereal              # 모든 로그에 사용되는 메시징 사양 및 라이브러리
+    ├── common              # 여기에서 개발한 기능과 같은 라이브러리
+    ├── docs                # 기록문서
+    ├── opendbc             # 차량 데이터 해석 방법이 있는 파일
+    ├── panda               # CAN에서 통신하는 데 사용되는 코드
+    ├── third_party         # 외부 라이브러리
+    ├── pyextra             # 추가 파이썬 패키지
+    └── selfdrive           # 자동차 운전에 필요한 코드
+        ├── assets          # UI에 사용될 글꼴, 이미지 및 사운드
+        ├── athena          # 앱과의 통신 허용
+        ├── boardd          # 보드와 대화 가능한 데몬
+        ├── camerad         # 카메라 센서에서 이미지를 캡처하는 드라이버
+        ├── car             # 상태를 읽고 작동기를 제어하기 위한 자동차 전용 코드
+        ├── common          # 데몬용 공유 C/C++ 코드
+        ├── controls        # 계획 및 컨트롤
+        ├── debug           # 차량 등록을 디버깅하고 수행하는 데 도움이 되는 도구
+        ├── locationd       # 차량 매개변수의 정확한 위치 파악 및 추정
+        ├── logcatd         # 안드로이드 logcat 서비스
+        ├── loggerd         # 차량 데이터 기록장치 및 업로더
         ├── modeld          # Driving and monitoring model runners
-        ├── proclogd        # Logs information from proc
-        ├── sensord         # IMU interface code
-        ├── test            # Unit tests, system tests, and a car simulator
-        └── ui              # The UI
+        ├── proclogd        # proc에서 기록한 정보
+        ├── sensord         # IMU 인터페이스 코드
+        ├── test            # 유닛 테스트, 시스템 테스트 및 자동차 시뮬레이터
+        └── ui              # UI
 
 라이선스
 ------
