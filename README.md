@@ -66,7 +66,7 @@ Openpilot 개발과 관련된 문서는 [docs.comma.ai](https://docs.comma.ai)�
 
 [브랜드](https://blog.comma.ai/how-to-write-a-car-port-for-openpilot/) 및 [모델](https://blog.comma.ai/openpilot-port-guide-for-toyota-models/) 등록에 대해 작성한 가이드에 따라 지원 차량을 추가할 수 있습니다. 일반적으로 적응형 순항 제어 및 차선 유지 보조 기능이 있는 차량이 등록에 적합한 후보입니다. [디스코드](https://discord.comma.ai)에 참여하여 자동차 등록에 대해 토론해보세요. 각 차량 제조업체에 맞는 전용 채널이 있습니다.
 
-openpilot에 입사하고 싶으신가요? [여기서 지원해보세요.](https://comma.ai/jobs/).
+openpilot에 입사하고 싶으신가요? [여기서 지원해보세요](https://comma.ai/jobs/).
 
 그리고 [트위터를 팔로우해주세요](https://twitter.com/comma_ai).
 
