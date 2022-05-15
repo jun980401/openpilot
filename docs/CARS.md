@@ -36,7 +36,7 @@
 
 ## Gold Cars
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델명|지원 패키지|openpilot ACC|브레이크 및 악셀|조향 제어|조향 토크|능동적 유지 보수|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |comma|body|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Genesis|G70 2020|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
@@ -73,7 +73,7 @@
 
 ## Silver Cars
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델명|지원 패키지|openpilot ACC|브레이크 및 악셀|조향 제어|조향 토크|능동적 유지 보수|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |Audi|A3 2014-19|ACC + Lane Assist|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Audi|A3 Sportback e-tron 2017-18|ACC + Lane Assist|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
@@ -159,7 +159,7 @@
 
 ## Bronze Cars
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델명|지원 패키지|openpilot ACC|브레이크 및 악셀|조향 제어|조향 토크|능동적 유지 보수|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |Acura|ILX 2016-19|AcuraWatch Plus|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Acura|RDX 2016-18|AcuraWatch Plus|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
@@ -221,14 +221,14 @@
 
 
 <a id="footnotes"></a>
-<sup>1</sup>Requires an <a href="https://comma.ai/shop/products/comma-car-harness">OBD-II car harness</a> and <a href="https://github.com/commaai/openpilot/wiki/GM#hardware">community built ASCM harness</a>. <b><i>NOTE: disconnecting the ASCM disables Automatic Emergency Braking (AEB).</i></b> <br />
-<sup>2</sup>2019 Honda Civic 1.6L Diesel Sedan does not have ALC below 12mph. <br />
-<sup>3</sup>When disconnecting the Driver Support Unit (DSU), openpilot Adaptive Cruise Control (ACC) will replace stock Adaptive Cruise Control (ACC). <b><i> NOTE: disconnecting the DSU disables Automatic Emergency Braking (AEB).</i></b> <br />
-<sup>4</sup>28mph for Camry 4CYL L, 4CYL LE and 4CYL SE which don't have Full-Speed Range Dynamic Radar Cruise Control. <br />
-<sup>5</sup>An inaccurate steering wheel angle sensor makes precise control difficult. <br />
-<sup>6</sup>Not including the China market Kamiq, which is based on the (currently) unsupported PQ34 platform. <br />
-<sup>7</sup>Not including the USA/China market Passat, which is based on the (currently) unsupported PQ35/NMS platform. <br />
-<sup>8</sup>Model-years 2021 and beyond may have a new camera harness design, which isn't yet available from the comma store. Before ordering, remove the Lane Assist camera cover and check to see if the connector is black (older design) or light brown (newer design). For the newer design, in the interim, choose "VW J533 Development" from the vehicle drop-down for a harness that integrates at the CAN gateway inside the dashboard. <br />
+<sup>1</sup> <a href="https://comma.ai/shop/products/comma-car-harness">OBD-II 자동차 하네스</a>와 <a href="https://github.com/commaai/openpilot/wiki/GM#hardware">커뮤니티 구축 ASCM 하네스</a>가 필요합니다. <b><i>참고: ASCM을 분리하면 자동 비상 제동(AEB)이 비활성화됩니다.</i></b> <br />
+<sup>2</sup> 2019 Honda Civic 1.6L Diesel Sedan에는 19km/h 미만의 ALC가 없습니다. <br />
+<sup>3</sup> DSU(운전자 지원 장치)를 분리하면 openpilot ACC(적응형 순항 제어)가 기본 ACC를 대체합니다. <b><i> 참고: DSU를 분리하면 자동 비상 제동(AEB)이 비활성화됩니다.</i></b> <br />
+<sup>4</sup> 풀 스피드 레인지 다이나믹 레이더 순항 제어가 없는 Camry 4CYL L, 4CYL LE 및 4CYL SE의 경우 45km/h 이다. <br />
+<sup>5</sup> 불확실한 스티어링 휠 각도 센서로는 정밀한 제어가 어렵습니다. <br />
+<sup>6</sup> (현재) 지원되지 않는 PQ34 플랫폼을 기반으로 하는 중국 시장 Kamiq는 포함되지 않습니다. <br />
+<sup>7</sup> (현재) 지원되지 않는 PQ35/NMS 플랫폼을 기반으로 하는 미국/중국 시장 Passat는 포함되지 않습니다. <br />
+<sup>8</sup> 2021년식 이후 모델에는 새로운 카메라 하네스 디자인이 있을 수 있으며, 이는 아직 comma 스토어에서 구매할 수 없습니다. 주문하기 전에 차선 보조 카메라 덮개를 제거하고 커넥터가 검정색(구형 디자인)인지 밝은 갈색(신형 디자인)인지 확인하십시오. 새로운 디자인일 경우 임시로 대시보드 내부의 CAN 게이트웨이에 통합되는 하네스를 위해 차량 드롭다운에서 "VW J533 Development"를 선택하십시오. <br />
 
-## Community Maintained Cars
-Although they're not upstream, the community has openpilot running on other makes and models. See the 'Community Supported Models' section of each make [on our wiki](https://wiki.comma.ai/).
+## 커뮤니티에서 관리하는 차량
+업스트림은 아니지만 커뮤니티에는 다른 제조업체 및 모델에서 실행 중인 openpilot이 있습니다. [위키](https://wiki.comma.ai/)에서 각 브랜드의 '커뮤니티 지원 모델' 섹션을 참조하세요.
