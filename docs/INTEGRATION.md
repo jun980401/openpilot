@@ -1,11 +1,11 @@
-# Integration with Stock Features
+# 스톡 기능과의 통합
 
-In all supported cars:
-* Stock Lane Keep Assist (LKA) and stock ALC are replaced by openpilot ALC, which only functions when openpilot is engaged by the user.
-* Stock LDW is replaced by openpilot LDW.
+지원되는 모든 차량에서:
+* LKA(스톡 차선 유지 보조) 및 스톡 ALC는 사용자가 openpilot을 사용할 때만 작동하는 openpilot ALC로 대체됩니다.
+* 스톡 LDW는 openpilot LDW로 대체됩니다.
 
-Additionally, on specific supported cars (see ACC column in [supported cars](CARS.md)):
-* Stock ACC is replaced by openpilot ACC.
-* openpilot FCW operates in addition to stock FCW.
+또한 특정 지원 차량의 경우 ([지원 차량](CARS.md)의 ACC 열을 참조하십시오.):
+* 스톡 ACC는 openpilot ACC로 대체됩니다.
+* openpilot FCW는 스톡 FCW에 추가로 작동합니다.
 
-openpilot should preserve all other vehicle's stock features, including, but are not limited to: FCW, Automatic Emergency Braking (AEB), auto high-beam, blind spot warning, and side collision warning.
+openpilot은 FCW, 자동 비상 제동(AEB), 자동 상향등, 사각 지대 경고 및 측면 충돌 경고를 포함하되 이에 국한되지 않는 다른 모든 차량의 기본 기능을 보존해야 합니다.
