@@ -1,58 +1,58 @@
-# Limitations
-## Limitations of openpilot ALC and LDW
+# 제한 사항
+## Openpilot ALC 및 LDW의 제한 사항
 
-openpilot ALC and openpilot LDW do not automatically drive the vehicle or reduce the amount of attention that must be paid to operate your vehicle. The driver must always keep control of the steering wheel and be ready to correct the openpilot ALC action at all times.
+openpilot ALC 및 openpilot LDW는 차량을 자동으로 운전하지 않거나 차량 작동에 필요한 주의를 줄여줍니다. 운전자는 항상 핸들을 제어해야 하며 openpilot ALC 동작을 제어할 준비가 항상 되어 있어야 합니다.
 
-While changing lanes, openpilot is not capable of looking next to you or checking your blind spot. Only nudge the wheel to initiate a lane change after you have confirmed it's safe to do so.
+차선을 변경하는 동안 openpilot은 측면을 보거나 사각 지대를 확인할 수 없습니다. 차선을 변경해도 안전한지 확인한 후에만 핸들을 살짝 움직여 차선 변경을 시작하십시오.
 
-Many factors can impact the performance of openpilot ALC and openpilot LDW, causing them to be unable to function as intended. These include, but are not limited to:
+많은 요인이 openpilot ALC 및 openpilot LDW의 성능에 영향을 주어 의도대로 작동하지 않을 수 있습니다. 다음 요소들이 해당되며 이외에도 다른 요인이 있을 수 있습니다.:
 
-* Poor visibility (heavy rain, snow, fog, etc.) or weather conditions that may interfere with sensor operation.
-* The road facing camera is obstructed, covered or damaged by mud, ice, snow, etc.
-* Obstruction caused by applying excessive paint or adhesive products (such as wraps, stickers, rubber coating, etc.) onto the vehicle.
-* The device is mounted incorrectly.
-* When in sharp curves, like on-off ramps, intersections etc...; openpilot is designed to be limited in the amount of steering torque it can produce.
-* In the presence of restricted lanes or construction zones.
-* When driving on highly banked roads or in presence of strong cross-wind.
-* Extremely hot or cold temperatures.
-* Bright light (due to oncoming headlights, direct sunlight, etc.).
-* Driving on hills, narrow, or winding roads.
+* 폭우, 눈, 안개 등의 기상 조건으로 인해 가시성이 저하되어 센서 작동에 방해가 되는 경우
+* 도로를 향한 카메라가 진흙, 얼음, 눈 등으로 가려지거나 파손된 경우
+* 차량에 과도한 도료 또는 접착 제품(랩, 스티커, 고무 코팅 등)을 부착한 경우
+* 장치가 잘 못 장착된 경우
+* 진입로, 교차로 등과 같은 급커브에 있을 경우 openpilot가 생성할 수 있는 조향 토크의 양은 제한되어 있음
+* 제한 차선 또는 공사 현장이 있는 경우.
+* 경사가 심한 도로나 강한 측풍이 있는 곳에서 운전할 경우
+* 기온이 극도로 높거나 낮을 경우
+* 정면으로 다가오는 헤드라이트나 직사광선 등과 같은 밝은 빛이 있을 경우
+* 언덕 또는 좁거나 구불구불한 도로에서 운전할 경우
 
-The list above does not represent an exhaustive list of situations that may interfere with proper operation of openpilot components. It is the driver's responsibility to be in control of the vehicle at all times.
+openpilot 구성 요소의 정상 작동을 방해하는 상황은 위의 목록이 다가 아닙니다. 차량을 제어하는 것은 항상 운전자의 책임입니다.
 
-## Limitations of openpilot ACC and FCW
+## Openpilot ACC 및 FCW의 제한 사항
 
-openpilot ACC and openpilot FCW are not systems that allow careless or inattentive driving. It is still necessary for the driver to pay close attention to the vehicle’s surroundings and to be ready to re-take control of the gas and the brake at all times.
+openpilot ACC 및 openpilot FCW는 부주의한 운전을 허용하는 시스템이 아닙니다. 운전자는 항상 차량 주변에 세심한 주의를 기울이고 가스와 브레이크를 다시 제어할 준비가 되어 있어야 합니다.
 
-Many factors can impact the performance of openpilot ACC and openpilot FCW, causing them to be unable to function as intended. These include, but are not limited to:
+많은 요인이 openpilot ALC 및 openpilot FCW의 성능에 영향을 주어 의도대로 작동하지 않을 수 있습니다. 다음 요소들이 해당되며 이외에도 다른 요인이 있을 수 있습니다.:
 
-* Poor visibility (heavy rain, snow, fog, etc.) or weather conditions that may interfere with sensor operation.
-* The road facing camera or radar are obstructed, covered, or damaged by mud, ice, snow, etc.
-* Obstruction caused by applying excessive paint or adhesive products (such as wraps, stickers, rubber coating, etc.) onto the vehicle.
-* The device is mounted incorrectly.
-* Approaching a toll booth, a bridge or a large metal plate.
-* When driving on roads with pedestrians, cyclists, etc...
-* In presence of traffic signs or stop lights, which are not detected by openpilot at this time.
-* When the posted speed limit is below the user selected set speed. openpilot does not detect speed limits at this time.
-* In presence of vehicles in the same lane that are not moving.
-* When abrupt braking maneuvers are required. openpilot is designed to be limited in the amount of deceleration and acceleration that it can produce.
-* When surrounding vehicles perform close cut-ins from neighbor lanes.
-* Driving on hills, narrow, or winding roads.
-* Extremely hot or cold temperatures.
-* Bright light (due to oncoming headlights, direct sunlight, etc.).
-* Interference from other equipment that generates radar waves.
+* 폭우, 눈, 안개 등의 기상 조건으로 인해 가시성이 저하되어 센서 작동에 방해가 되는 경우
+* 도로를 향한 카메라가 진흙, 얼음, 눈 등으로 가려지거나 파손된 경우
+* 차량에 과도한 도료 또는 접착 제품(랩, 스티커, 고무 코팅 등)을 부착한 경우
+* 장치가 잘 못 장착된 경우
+* 요금소, 다리 또는 대형 금속판에 접근할 경우
+* 보행자, 자전거 탑승자 등이 있는 도로를 주행할 경우
+* 현재 openpilot에 의해 감지되지 않는 교통 표지판 또는 정지 신호가 있는 경우.
+* 게시된 제한 속도가 사용자가 선택한 설정 속도보다 낮은 경우 openpilot은 현재 속도 제한을 감지하지 않음
+* 같은 차선에 움직이지 않는 차량이 있는 경우.
+* 급제동이 필요한 경우 openpilot이 생성할 수 있는 감속 및 가속의 양은 제한되어있음
+* 주변 차량이 옆 차선에서 끼어들 경우.
+* 언덕 또는 좁거나 구불구불한 도로에서 운전할 경우
+* 기온이 극도로 높거나 낮을 경우
+* 정면으로 다가오는 헤드라이트나 직사광선 등과 같은 밝은 빛이 있을 경우
+* 레이더파를 생성하는 다른 장비의 간섭이 있을 경우
 
-The list above does not represent an exhaustive list of situations that may interfere with proper operation of openpilot components. It is the driver's responsibility to be in control of the vehicle at all times.
+openpilot 구성 요소의 정상 작동을 방해하는 상황은 위의 목록이 다가 아닙니다. 차량을 제어하는 것은 항상 운전자의 책임입니다.
 
-## Limitations of openpilot DM
+## openpilot DM의 제한 사항
 
-openpilot DM should not be considered an exact measurement of the alertness of the driver.
+openpilot DM은 운전자의 주의력의 정확한 측정이 아님을 기억해야 합니다.
 
-Many factors can impact the performance of openpilot DM, causing it to be unable to function as intended. These include, but are not limited to:
+많은 요인이 openpilot DM의 성능에 영향을 주어 의도대로 작동하지 않을 수 있습니다. 다음 요소들이 해당되며 이외에도 다른 요인이 있을 수 있습니다.:
 
-* Low light conditions, such as driving at night or in dark tunnels.
-* Bright light (due to oncoming headlights, direct sunlight, etc.).
-* The driver's face is partially or completely outside field of view of the driver facing camera.
-* The driver facing camera is obstructed, covered, or damaged.
+* 야간 운전을 하거나 어두운 터널과 같은 저조도 조건이 있을 경우
+* 정면으로 다가오는 헤드라이트나 직사광선 등과 같은 밝은 빛이 있을 경우
+* 운전자의 얼굴이 운전자를 향하는 카메라의 시야에서 벗어난 
+* 운전자를 바라보는 카메라가 가려지거나 손상된 경우
 
-The list above does not represent an exhaustive list of situations that may interfere with proper operation of openpilot components. A driver should not rely on openpilot DM to assess their level of attention.
+openpilot 구성 요소의 정상 작동을 방해하는 상황은 위의 목록이 다가 아닙니다. 운전자는 주의 수준을 평가하기 위해 openpilot DM에 의존해서는 안 됩니다.
