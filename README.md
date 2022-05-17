@@ -1,6 +1,6 @@
-***여기는 한국인들을 위한 openpilot 한글화 리포지토리입니다.
-기존 comma.ai의 openpilot을 그대로 번역하였으며, 직역 및 일부 의역으로 이루어져 있습니다.
-현재도 계속 번역을 진행중이며 적절한 의역 및 기술번역 제의를 기다리고 있습니다.***
+### 여기는 한국인들을 위해 openpilot 위키의 한글화 작업을 진행 중인 리포지토리입니다.
+### 기존 comma.ai의 openpilot을 그대로 번역하였으며 직역 및 일부 의역으로 이루어져 있습니다.
+### 현재도 계속 번역을 진행중이며 적절한 의역 및 기술번역 제의를 기다리고 있습니다.
 
 ![](https://i.imgur.com/b0ZyIx5.jpg)
 
@@ -46,7 +46,7 @@ openpilot 이란?
 차량에서 openpilot을 사용하기 위해 다음 4가지가 필요합니다.
 * 먼저 openpilot 소프트웨어가 필요합니다. 여기서 무료로 사용할 수 있습니다.
 * 다음으로 [150개 이상의 지원되는 차량](docs/CARS.md) 중 하나가 필요합니다. 현재 혼다, 토요타, 현대, 닛산, 기아, 크라이슬러, 렉서스, Acura, 아우디, 폭스바겐 등을 지원하고 있습니다. 보유한 차량이 공식적으로 지원되지 않아도 적응형 크루즈 컨트롤 및 차선 유지 보조 장치가 있는 경우 개방형 조종 장치를 실행할 수 있습니다.
-* 이 소프트웨어를 실행하기 위해 지원되는 장치로 [comma three](https://comma.ai/shop/products/three)가 필요하고, 실험을 하고 싶다면 [웹 카메라가 있는 Ubuntu 컴퓨터](https://github.com/commaai/openpilot/tree/master/tools/webcam)가 필요합니다.
+* 이 소프트웨어를 실행하기 위해 지원되는 장치로 [comma three](https://comma.ai/shop/products/three)가 필요하고, 실험을 하고 싶다면 [웹 카메라가 있는 Ubuntu 컴퓨터](https://github.com/cebu13/openpilot/tree/master/tools/webcam)가 필요합니다.
 * 자동차에 연결하는 방법. comma three를 이용하면, 오직 [car harness](https://comma.ai/shop/products/car-harness)만 있으면 됩니다. PC를 이용하면, [black panda](https://comma.ai/shop/products/panda)도 함께 필요합니다.
 
 [자동차에 장치를 설치하는 방법](https://comma.ai/setup)에 대한 자세한 지침이 있습니다.
