@@ -104,29 +104,29 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
 
 DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   setSpacing(50);
-  addItem(new LabelControl("Dongle ID", getDongleId().value_or("N/A")));
-  addItem(new LabelControl("Serial", params.get("HardwareSerial").c_str()));
+  addItem(new LabelControl("동글 ID", getDongleId().value_or("N/A")));
+  addItem(new LabelControl("시리얼 넘버", params.get("HardwareSerial").c_str()));
 
   // offroad-only buttons
 
-  auto dcamBtn = new ButtonControl("Driver Camera", "PREVIEW",
-                                   "Preview the driver facing camera to help optimize device mounting position for best driver monitoring experience. (vehicle must be off)");
+  auto dcamBtn = new ButtonControl("운전자 카메라", "미리보기",
+                                   "최상의 운전자 모니터링 경험을 위해 장치 장착 위치를 최적화하는 데 도움이 되도록 운전자를 향한 카메라를 미리 봅니다. (차량 시동은 꺼져있어야 함)");
   connect(dcamBtn, &ButtonControl::clicked, [=]() { emit showDriverView(); });
   addItem(dcamBtn);
 
-  auto resetCalibBtn = new ButtonControl("Reset Calibration", "RESET", " ");
+  auto resetCalibBtn = new ButtonControl("보정 재설정", "재설정", " ");
   connect(resetCalibBtn, &ButtonControl::showDescription, this, &DevicePanel::updateCalibDescription);
   connect(resetCalibBtn, &ButtonControl::clicked, [&]() {
-    if (ConfirmationDialog::confirm("Are you sure you want to reset calibration?", this)) {
+    if (ConfirmationDialog::confirm("보정 재설정을 하시겠습니까?", this)) {
       params.remove("CalibrationParams");
     }
   });
   addItem(resetCalibBtn);
 
   if (!params.getBool("Passive")) {
-    auto retrainingBtn = new ButtonControl("Review Training Guide", "REVIEW", "Review the rules, features, and limitations of openpilot");
+    auto retrainingBtn = new ButtonControl("튜토리얼 진행", "시작", "openpilot의 규칙, 기능 및 제한 사항 검토");
     connect(retrainingBtn, &ButtonControl::clicked, [=]() {
-      if (ConfirmationDialog::confirm("Are you sure you want to review the training guide?", this)) {
+      if (ConfirmationDialog::confirm("튜토리얼을 진행하시겠습니까?", this)) {
         emit reviewTrainingGuide();
       }
     });
@@ -152,12 +152,12 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
   QHBoxLayout *power_layout = new QHBoxLayout();
   power_layout->setSpacing(30);
 
-  QPushButton *reboot_btn = new QPushButton("Reboot");
+  QPushButton *reboot_btn = new QPushButton("재시작");
   reboot_btn->setObjectName("reboot_btn");
   power_layout->addWidget(reboot_btn);
   QObject::connect(reboot_btn, &QPushButton::clicked, this, &DevicePanel::reboot);
 
-  QPushButton *poweroff_btn = new QPushButton("Power Off");
+  QPushButton *poweroff_btn = new QPushButton("전원 종료");
   poweroff_btn->setObjectName("poweroff_btn");
   power_layout->addWidget(poweroff_btn);
   QObject::connect(poweroff_btn, &QPushButton::clicked, this, &DevicePanel::poweroff);
@@ -201,27 +201,27 @@ void DevicePanel::updateCalibDescription() {
 
 void DevicePanel::reboot() {
   if (!uiState()->engaged()) {
-    if (ConfirmationDialog::confirm("Are you sure you want to reboot?", this)) {
+    if (ConfirmationDialog::confirm("재시작 하시겠습니까?", this)) {
       // Check engaged again in case it changed while the dialog was open
       if (!uiState()->engaged()) {
         Params().putBool("DoReboot", true);
       }
     }
   } else {
-    ConfirmationDialog::alert("Disengage to Reboot", this);
+    ConfirmationDialog::alert("재시작 하려면 종료", this);
   }
 }
 
 void DevicePanel::poweroff() {
   if (!uiState()->engaged()) {
-    if (ConfirmationDialog::confirm("Are you sure you want to power off?", this)) {
+    if (ConfirmationDialog::confirm("전원을 끄시겠습니까?", this)) {
       // Check engaged again in case it changed while the dialog was open
       if (!uiState()->engaged()) {
         Params().putBool("DoShutdown", true);
       }
     }
   } else {
-    ConfirmationDialog::alert("Disengage to Power Off", this);
+    ConfirmationDialog::alert("전원을 끄려면 해제", this);
   }
 }
 
