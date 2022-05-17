@@ -231,4 +231,4 @@
 <sup>8</sup>Model-years 2021 and beyond may have a new camera harness design, which isn't yet available from the comma store. Before ordering, remove the Lane Assist camera cover and check to see if the connector is black (older design) or light brown (newer design). For the newer design, in the interim, choose "VW J533 Development" from the vehicle drop-down for a harness that integrates at the CAN gateway inside the dashboard. <br />
 
 ## Community Maintained Cars
-Although they're not upstream, the community has openpilot running on other makes and models. See the 'Community Supported Models' section of each make [on our wiki](https://wiki.comma.ai/).
+업스트림은 아니지만 커뮤니티에는 다른 제조업체 및 모델에서 실행 중인 openpilot이 있습니다. [위키](https://wiki.comma.ai/)에서 각 브랜드의 '커뮤니티 지원 모델' 섹션을 참조하세요.
