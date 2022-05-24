@@ -18,7 +18,7 @@
 * 문서 작성
 * 미해결 [good first issue](https://github.com/commaai/openpilot/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) 해결
 
-## Pull Requests
+## 풀 리퀘스트
 
 풀 리퀘스트는 마스터 브랜치에 대한 것이어야 합니다. 버그 리포트, 자동차 포트 및 [미해결 문제](https://github.com/commaai/openpilot/issues)에 대한 기여는 언제나 환영합니다. 기여에 대해 확신이 서지 않으면 자유롭게 토론, 이슈를 열거나 PR 초안을 작성하여 해결하려는 문제에 대해 논의하십시오.
 
@@ -43,6 +43,6 @@ openpilot을 새로운 자동차 브랜드로 이식할 경우, 보다 일반적
 
 모든 PR 및 커밋은 GitHub Actions에서 자동으로 확인됩니다. GitHub Actions가 실행하는 내용은 `.github/workflows/`를 확인하세요. 모든 새 테스트는 GitHub 작업에 추가되어야 합니다.
 
-### 코드 스타일 및 
+### 코드 스타일 및 라이닝
 
 코드는 자동화된 테스트의 일부로 GitHub Actions에 의해 스타일이 자동으로 확인됩니다. `pre-commit run --all`을 실행하여 이러한 테스트를 직접 실행할 수도 있습니다.
