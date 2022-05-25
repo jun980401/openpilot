@@ -1,12 +1,13 @@
-# Supported Cars
+# 지원 차량
 
-A supported vehicle is one that just works when you install a comma device. Every car performs differently with openpilot, but all supported cars should provide a better experience than any stock system.
+지원되는 차량에 comma 기기를 설치하면 프로그램이 작동됩니다.
+각 자동차는 openpilot에서 상이하게 작동하지만 스톡 시스템보다 더 우수한 기능을 제공합니다.
 
-Cars are organized into three tiers:
+각 차량은 아래의 3개의 등급으로 나뉩니다.
 
-- Gold - The best openpilot experience. Great highway driving and beyond.
-- Silver - A solid highway driving experience, but is limited by stock longitudinal. May be upgraded in the future.
-- Bronze - A good highway experience, but may have limited performance in traffic and on sharp turns.
+- Gold - 최고의 openpilot을 경험할 수 있습니다. 훌륭한 자율주행 및 그 이상의 기능을 사용할 수 있습니다.
+- Silver - 견고한 자율주행 기능을 사용할 수 있지만 스톡 길이에 의해 일부 기능이 제한됩니다. 이는 향후 업그레이드될 수 있습니다.
+- Bronze - 괜찮은 자율주행 기능을 제공하지만 교통 체증과 급회전 시 성능이 제한될 수 있습니다.
 
 How We Rate The Cars
 ---
