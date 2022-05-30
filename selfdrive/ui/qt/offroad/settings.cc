@@ -177,8 +177,8 @@ DevicePanel::DevicePanel(SettingsWindow *parent) : ListWidget(parent) {
 
 void DevicePanel::updateCalibDescription() {
   QString desc =
-      "openpilot requires the device to be mounted within 4° left or right and "
-      "within 5° up or 8° down. openpilot is continuously calibrating, resetting is rarely required.";
+      "openpilot은 장치를 왼쪽 또는 오른쪽으로 4° 이내, 위쪽으로 5° 또는 아래쪽으로 8° 이내에 "
+      "장착해야 합니다. openpilot은 계속해서 교정 중이므로 재설정이 거의 필요하지 않습니다.";
   std::string calib_bytes = Params().get("CalibrationParams");
   if (!calib_bytes.empty()) {
     try {
