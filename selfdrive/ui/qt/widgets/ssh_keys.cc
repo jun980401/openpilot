@@ -10,7 +10,7 @@ SshControl::SshControl() : ButtonControl("SSH 키", "", "경고: 이 경우 GitH
   hlayout->insertWidget(1, &username_label);
 
   QObject::connect(this, &ButtonControl::clicked, [=]() {
-    if (text() == "추가") {
+    if (text() == "ADD") {
       QString username = InputDialog::getText("GitHub 사용자명을 입력하세요.", this);
       if (username.length() > 0) {
         setText("LOADING");
@@ -34,7 +34,7 @@ void SshControl::refresh() {
     setText("REMOVE");
   } else {
     username_label.setText("");
-    setText("추가");
+    setText("ADD");
   }
   setEnabled(true);
 }
