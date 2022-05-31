@@ -92,7 +92,7 @@ MapPanel::MapPanel(QWidget* parent) : QWidget(parent) {
   QWidget * no_prime_widget = new QWidget;
   {
     QVBoxLayout *no_prime_layout = new QVBoxLayout(no_prime_widget);
-    QLabel *signup_header = new QLabel("Try the Navigation Beta");
+    QLabel *signup_header = new QLabel("네비게이션 베타 버전을 사용해보세요.");
     signup_header->setStyleSheet(R"(font-size: 75px; color: white; font-weight:600;)");
     signup_header->setAlignment(Qt::AlignCenter);
 
@@ -104,7 +104,7 @@ MapPanel::MapPanel(QWidget* parent) : QWidget(parent) {
     screenshot->setPixmap(pm.scaledToWidth(1080, Qt::SmoothTransformation));
     no_prime_layout->addWidget(screenshot, 0, Qt::AlignHCenter);
 
-    QLabel *signup = new QLabel("Get turn-by-turn directions displayed and more with a comma \nprime subscription. Sign up now: https://connect.comma.ai");
+    QLabel *signup = new QLabel("comma 프리미엄에 가입하여 턴바이턴 경로 등등 여러 기능을\n확인해보세요.      지금 가입: https://connect.comma.ai");
     signup->setStyleSheet(R"(font-size: 45px; color: white; font-weight:300;)");
     signup->setAlignment(Qt::AlignCenter);
 
