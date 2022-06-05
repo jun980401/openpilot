@@ -2,23 +2,23 @@
 
 ## Quick Start
 
-In order to SSH into your device, you'll need a GitHub account with SSH keys. See this [GitHub article](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for getting your account setup with SSH keys.
+장치에 SSH로 연결하려면 SSH 키가 있는 GitHub 계정이 필요합니다. SSH 키로 계정 설정을 하려면 이 [GitHub 문서](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)를 참조하십시오.
 
-* Enable SSH in your device's settings
-* Enter your GitHub username in the device's settings
-* Connect to your device
-  * Username: `comma` (comma three)
-  * Port: `22` or `8022`
+* 디바이스 설정에서 SSH 활성화
+* 디바이스 설정에 GitHub 사용자 이름 입력
+* 기기 연결
+  * 사용자 이름: `comma` (comma three)
+  * 포트: `22` 또는 `8022`
 
-Here's an example command for connecting to your device using its tethered connection:
+다음은 테더링 연결을 사용하여 장치에 연결하는 명령어의 예시입니다.
 `ssh root@192.168.43.1`
 
-For doing development work on device, it's recommended to use [SSH agent forwarding](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding).
+디바이스에서 개발 작업을 하기 위해서는 [SSH 에이전트 포워딩](https://docs.github.com/en/developers/overview/using-ssh-agent-forwarding) 사용을 권장합니다.
 
 ## Notes
 
-The public keys are only fetched from your GitHub account once. In order to update your device's authorized keys, you'll need to re-enter your GitHub username.
+공개 키는 GitHub 계정에서 한 번만 가져옵니다. 기기의 승인된 키를 업데이트하려면 GitHub 사용자 이름을 다시 입력해야 합니다.
 
-The `id_rsa` key in this directory only works while your device is in the setup state with no software installed. After installation, that default key will be removed.
+이 디렉토리의 'id_rsa' 키는 장치가 소프트웨어가 설치되지 않은 설정 상태에 있는 동안에만 작동합니다. 설치 후 해당 기본 키가 제거됩니다.
 
-See the [community wiki](https://github.com/commaai/openpilot/wiki/SSH) for more detailed instructions and information.
+자세한 지침 및 정보는 [커뮤니티 위키](https://github.com/commaai/openpilot/wiki/SSH)를 참조하십시오.
