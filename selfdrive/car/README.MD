@@ -1,11 +1,11 @@
-## Port structure
+## Port 구조
 ##### interface.py
-Generic interface to send and receive messages from CAN (controlsd uses this to communicate with car)
+CAN에서 메시지를 주고 받기 위한 일반 인터페이스(controlsd는 이를 사용하여 자동차와 통신함)
 ##### carcontroller.py
-Builds CAN messages to send to car
+자동차로 보낼 CAN 메시지 빌드
 ##### carstate.py
-Reads CAN from car and builds openpilot CarState message
+자동차에서 CAN을 읽고 openpilot CarState 메시지를 빌드합니다.
 ##### values.py
-Fingerprints and absolute limits
+지문 및 절대적 한계
 ##### radar_interface.py
-Radar interface
+레이더 인터페이스
