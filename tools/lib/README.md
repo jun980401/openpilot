@@ -1,6 +1,6 @@
 ## LogReader
 
-Route is a class for conviently accessing all the [logs](/selfdrive/loggerd/) from your routes. The LogReader class reads the non-video logs, i.e. rlog.bz2 and qlog.bz2. There's also a matching FrameReader class for reading the videos.
+루트는 사용자 경로의 모든 [로그](/selfdrive/loggerd/)에 편리하게 액세스할 수 있는 클래스입니다. LogReader 클래스는 비디오가 아닌 로그(예: rlog.bz2 및 qlog.bz2)를 읽습니다. 비디오를 읽기 위한 일치 FrameReader 클래스도 있습니다.
 
 ```python
 from tools.lib.route import Route
@@ -34,7 +34,7 @@ for msg in lr:
 
 ### MultiLogIterator
 
-`MultiLogIterator` is similar to `LogReader`, but reads multiple logs. 
+`MultiLogIterator`는 `LogReader`와 유사하지만 여러 로그를 읽는다는 차이점이 있습니다. 
 
 ```python
 from tools.lib.route import Route
