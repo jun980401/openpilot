@@ -35,9 +35,9 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 
 **지원되는 모든 차량은 업데이트에 따라 등급이 변경될 수 있습니다.**
 
-## Gold Cars
+## 골드 차량
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델|지원 패키지|적응형 순항 제어 장치|공회전 제한 장치|Steer to 0|조향 토크|Actively Maintained|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |comma|body|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Genesis|G70 2020|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
@@ -72,9 +72,9 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 |Toyota|RAV4 2019-21|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Toyota|RAV4 Hybrid 2019-21|All|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 
-## Silver Cars
+## 실버 차량
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델|지원 패키지|적응형 순항 제어 장치|공회전 제한 장치|Steer to 0|조향 토크|Actively Maintained|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |Audi|A3 2014-19|ACC + Lane Assist|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Audi|A3 Sportback e-tron 2017-18|ACC + Lane Assist|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
@@ -159,9 +159,9 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 |Volkswagen|Tiguan 2019-22[<sup>8</sup>](#footnotes)|Driver Assistance|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Volkswagen|Touran 2017|Driver Assistance|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 
-## Bronze Cars
+## 브론즈 차량
 
-|Make|Model|Supported Package|openpilot ACC|Stop and Go|Steer to 0|Steering Torque|Actively Maintained|
+|제조사|모델|지원 패키지|적응형 순항 제어 장치|공회전 제한 장치|Steer to 0|조향 토크|Actively Maintained|
 |---|---|---|:---:|:---:|:---:|:---:|:---:|
 |Acura|ILX 2016-19|AcuraWatch Plus|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 |Acura|RDX 2016-18|AcuraWatch Plus|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
