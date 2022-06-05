@@ -9,31 +9,31 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 - 실버 - 견고한 고속도로 주행을 할 수 있으나 스톡 길이에 의해 일부 기능이 제한되며 이는 향후 업그레이드될 수 있습니다.
 - 브론즈 - 괜찮은 고속도로 주행 기능을 제공하지만 교통 체증 상황이나 급회전 시 성능이 제한될 수 있습니다.
 
-How We Rate The Cars
+차량 등급 평가 기준
 ---
 
-### openpilot Adaptive Cruise Control (ACC)
-- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - openpilot is able to control the gas and brakes.
-- <a href="##"><img valign="top" src="assets/icon-star-half.svg" width="22" /></a> - openpilot is able to control the gas and brakes with some restrictions.
-- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - The gas and brakes are controlled by the car's stock Adaptive Cruise Control (ACC) system.
+### 적응형 순항 제어 장치 (ACC)
+- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - openpilot이 가스 및 브레이크를 제어할 수 있습니다.
+- <a href="##"><img valign="top" src="assets/icon-star-half.svg" width="22" /></a> - openpilot이 가스 및 브레이크를 제어할 수 있으나 몇 가지 제한 사항이 있습니다.
+- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - 가스와 브레이크가 차량의 기본 ACC 시스템에 의해 제어됩니다.
 
-### Stop and Go
-- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - Adaptive Cruise Control (ACC) operates down to 0 mph.
-- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - Adaptive Cruise Control (ACC) available only above certain speeds. See your car's manual for the minimum speed.
+### 공회전 제한 장치
+- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - 적응형 순항 제어 장치가 0km/h까지 작동합니다.
+- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - 적응형 순항 제어 장치를 특정 속도 이상에서만 사용할 수 있습니다. 최소 속도는 자동차 설명서를 참조하십시오.
 
 ### Steer to 0
-- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - openpilot can control the steering wheel down to 0 mph.
-- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - No steering control below certain speeds.
+- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - openpilot이 핸들을 0km/h까지 제어할 수 있습니다.
+- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - 특정 속도 이하에서는 조향 제어가 불가능합니다.
 
-### Steering Torque
-- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - Car has enough steering torque for comfortable highway driving.
-- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - Limited ability to make turns.
+### 조향 토크
+- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - 차량이 편안한 고속도로 주행을 위한 충분한 조향 토크를 가지고 있습니다.
+- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - 회전하는 능력이 제한적입니다.
 
 ### Actively Maintained
-- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - Mainline software support, harness hardware sold by comma, lots of users, primary development target.
-- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - Low user count, community maintained, harness hardware not sold by comma.
+- <a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a> - 주요 소프트웨어 지원, comma에서 판매하는 하네스 하드웨어, 많은 사용자, 주요 개발 대상.
+- <a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a> - 낮은 사용자 수 및 커뮤니티 유지, comma에서 판매하지 않는 하네스 하드웨어.
 
-**All supported cars can move between the tiers as support changes.**
+**지원되는 모든 차량은 업데이트에 따라 등급이 변경될 수 있습니다.**
 
 ## Gold Cars
 
