@@ -222,9 +222,9 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 |Volkswagen|Caravelle 2020[<sup>8</sup>](#footnotes)|Driver Assistance|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-empty.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|<a href="##"><img valign="top" src="assets/icon-star-full.svg" width="22" /></a>|
 
 <a id="footnotes"></a>
-<sup>1</sup>Requires an <a href="https://comma.ai/shop/products/comma-car-harness">OBD-II car harness</a> and <a href="https://github.com/commaai/openpilot/wiki/GM#hardware">community built ASCM harness</a>. <b><i>NOTE: disconnecting the ASCM disables Automatic Emergency Braking (AEB).</i></b> <br />
-<sup>2</sup>2019 Honda Civic 1.6L Diesel Sedan does not have ALC below 12mph. <br />
-<sup>3</sup>When disconnecting the Driver Support Unit (DSU), openpilot Adaptive Cruise Control (ACC) will replace stock Adaptive Cruise Control (ACC). <b><i> NOTE: disconnecting the DSU disables Automatic Emergency Braking (AEB).</i></b> <br />
+<sup>1</sup><a href="https://comma.ai/shop/products/comma-car-harness">OBD-II 자동차 하네스</a>와 <a href="https://github.com/commaai/openpilot/wiki/GM#hardware">커뮤니티 제작 ASCM 하네스</a>가 필요합니다. <b><i>NOTE: ASCM을 분리하면 자동 긴급제동장치(AEB)가 비활성화됩니다.</i></b> <br />
+<sup>2</sup>2019 Honda Civic 1.6L Diesel Sedan에는 20km/h 미만에서의 자동 차선 센터링 기능(ALC)이 없습니다. <br />
+<sup>3</sup>운전자 지원 장치(DSU)를 분리하면 openpilot 적응형 순항 제어 장치(ACC)가 기본 ACC를 대체합니다. <b><i> NOTE: DSU를 분리하면 자동 긴급제동장치(AEB)가 비활성화됩니다.</i></b> <br />
 <sup>4</sup>28mph for Camry 4CYL L, 4CYL LE and 4CYL SE which don't have Full-Speed Range Dynamic Radar Cruise Control. <br />
 <sup>5</sup>An inaccurate steering wheel angle sensor makes precise control difficult. <br />
 <sup>6</sup>Not including the China market Kamiq, which is based on the (currently) unsupported PQ34 platform. <br />
