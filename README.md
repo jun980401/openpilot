@@ -21,7 +21,7 @@
 openpilot 이란?
 ------
 
-[openpilot](http://github.com/commaai/openpilot) 은 오픈 소스 운전자 지원 시스템입니다. 현재 openpilot은 [지원되는 다양한 제조업체, 모델 및 연식](docs/CARS.md)에 적응형 순항 제어(ACC), 자동 차선 센터링(ALC), 전방 충돌 경고(FCW) 및 차선 이탈 경고(LDW)의 기능을 제공합니다. 또한 openpilot이 작동하는 동안 카메라 기반 DM(운전자 모니터링) 기능은 집중력이 떨어지거나 졸음 운전을 하는 운전자에게 경고기능을 수행합니다. [차량 통합](docs/INTEGRATION.md) 및 [제한 사항](docs/LIMITATIONS.md)에 대해 자세히 알아보세요.
+[openpilot](http://github.com/commaai/openpilot) 은 오픈 소스 운전자 지원 시스템입니다. 현재 openpilot은 [지원되는 다양한 제조업체, 모델 및 연식](docs/CARS_.md)에 적응형 순항 제어(ACC), 자동 차선 센터링(ALC), 전방 충돌 경고(FCW) 및 차선 이탈 경고(LDW)의 기능을 제공합니다. 또한 openpilot이 작동하는 동안 카메라 기반 DM(운전자 모니터링) 기능은 집중력이 떨어지거나 졸음 운전을 하는 운전자에게 경고기능을 수행합니다. [차량 통합](docs/INTEGRATION.md) 및 [제한 사항](docs/LIMITATIONS.md)에 대해 자세히 알아보세요.
 
 <table>
   <tr>
