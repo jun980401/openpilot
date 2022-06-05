@@ -225,11 +225,11 @@ openpilot에서 다르게 작동하지만 스톡 시스템보다 더 나은 기�
 <sup>1</sup><a href="https://comma.ai/shop/products/comma-car-harness">OBD-II 자동차 하네스</a>와 <a href="https://github.com/commaai/openpilot/wiki/GM#hardware">커뮤니티 제작 ASCM 하네스</a>가 필요합니다. <b><i>NOTE: ASCM을 분리하면 자동 긴급제동장치(AEB)가 비활성화됩니다.</i></b> <br />
 <sup>2</sup>2019 Honda Civic 1.6L Diesel Sedan에는 20km/h 미만에서의 자동 차선 센터링 기능(ALC)이 없습니다. <br />
 <sup>3</sup>운전자 지원 장치(DSU)를 분리하면 openpilot 적응형 순항 제어 장치(ACC)가 기본 ACC를 대체합니다. <b><i> NOTE: DSU를 분리하면 자동 긴급제동장치(AEB)가 비활성화됩니다.</i></b> <br />
-<sup>4</sup>28mph for Camry 4CYL L, 4CYL LE and 4CYL SE which don't have Full-Speed Range Dynamic Radar Cruise Control. <br />
-<sup>5</sup>An inaccurate steering wheel angle sensor makes precise control difficult. <br />
-<sup>6</sup>Not including the China market Kamiq, which is based on the (currently) unsupported PQ34 platform. <br />
-<sup>7</sup>Not including the USA/China market Passat, which is based on the (currently) unsupported PQ35/NMS platform. <br />
-<sup>8</sup>Model-years 2021 and beyond may have a new camera harness design, which isn't yet available from the comma store. Before ordering, remove the Lane Assist camera cover and check to see if the connector is black (older design) or light brown (newer design). For the newer design, in the interim, choose "VW J533 Development" from the vehicle drop-down for a harness that integrates at the CAN gateway inside the dashboard. <br />
+<sup>4</sup>Full-Speed Range Dynamic Radar Cruise Control이 없는 Camry 4CYL L, 4CYL LE 및 4CYL SE의 경우 45km/h. <br />
+<sup>5</sup>부정확한 핸들 각도 센서로는 정확한 제어가 어렵습니다. <br />
+<sup>6</sup>(현재) 지원되지 않는 PQ34 플랫폼을 기반으로 하는 중국 마켓 Kamiq는 포함되지 않습니다. <br />
+<sup>7</sup>(현재) 지원되지 않는 PQ35/NMS 플랫폼을 기반으로 하는 미국/중국 마켓 Passat는 포함되지 않습니다. <br />
+<sup>8</sup>2021년식 이후 모델에는 새로운 카메라 하네스 디자인이 있을 수 있으며, 이는 아직 comma 스토어에서 구할 수 없습니다. 주문하기 전에 차선 보조 카메라 커버를 제거하고 커넥터가 검정색(구형 디자인)인지 밝은 갈색(신형 디자인)인지 확인하십시오. 새로운 디자인의 경우 임시로 대시보드 내부의 CAN 게이트웨이에 통합되는 하네스를 위해 차량 드롭다운에서 "VW J533 Development"를 선택하십시오. <br />
 
-## Community Maintained Cars
-Although they're not upstream, the community has openpilot running on other makes and models. See the 'Community Supported Models' section of each make [on our wiki](https://wiki.comma.ai/).
+## 커뮤니티에서 관리하는 차량
+업스트림은 아니지만 커뮤니티에는 다른 제조업체 및 모델에서 실행 중인 openpilot이 있습니다. [위키에서](https://wiki.comma.ai/) 각 브랜드의 '커뮤니티 지원 모델' 섹션을 참조하세요.
