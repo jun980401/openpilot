@@ -57,11 +57,11 @@ struct Alert {
       } else if (controls_missing > CONTROLS_TIMEOUT) {
         // car is started, but controls is lagging or died
         if (cs.getEnabled() && (controls_missing - CONTROLS_TIMEOUT) < 10) {
-          return {"TAKE CONTROL IMMEDIATELY", "Controls Unresponsive",
-                  "controlsUnresponsive", cereal::ControlsState::AlertSize::FULL,
+          return {"즉시 핸들을 잡으십시오.", "연결이 원활하지 않습니다.",
+                  "연결이 원활하지 않습니다.", cereal::ControlsState::AlertSize::FULL,
                   AudibleAlert::WARNING_IMMEDIATE};
         } else {
-          return {"Controls Unresponsive", "Reboot Device",
+          return {"연결이 원활하지 않습니다.", "기기를 재부팅하세요.",
                   "controlsUnresponsivePermanent", cereal::ControlsState::AlertSize::MID,
                   AudibleAlert::NONE};
         }
